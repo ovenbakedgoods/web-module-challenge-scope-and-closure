@@ -28,7 +28,7 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
   Study the code for counter1 and counter2, then answer the questions below.
   
   1. What is the difference between counter1 and counter2?
-  Counter 2 is a closur
+  Counter 2 is a closure
   
   2. Which of the two uses a closure? How can you tell?
   counter 2 because it has to look outside the function for the variable count 
@@ -36,6 +36,9 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
   3. In what scenario would the counter1 code be preferable?  
   In what scenario would 
      counter2 be better?  
+     counter1 could be preferable if you want to run the function multiple times with the counter always resetting at 0.
+
+     counter2 would be better if you want to keep a running total on the counter
 */
 
 // counter1 code
@@ -220,7 +223,8 @@ Use the scoreboard function below to do the following:
            {
            newarr.push(`Final Score: Away ${awayScore} - Home ${homeScore}`) 
            }
-           }
+
+          }
            ++rounds;
            
          }
